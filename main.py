@@ -9,44 +9,44 @@ def run():
     global numberOfMistyques
     global numberOfSignet
     time.sleep(1)
-    signetFound = pyautogui.locateCenterOnScreen("signetPrice.png", confidence=0.95)
+    signetFound = pyautogui.locateCenterOnScreen("templates/signetPrice.png", confidence=0.95)
     if signetFound!=None:
         pyautogui.click(signetFound)
         time.sleep(1)
-        validateSignet = pyautogui.locateCenterOnScreen("checkSummon.png", confidence=0.99)
+        validateSignet = pyautogui.locateCenterOnScreen("templates/checkSummon.png", confidence=0.99)
         if validateSignet!=None:
-            buySignet = pyautogui.locateCenterOnScreen("buySignet.png")
+            buySignet = pyautogui.locateCenterOnScreen("templates/buySignet.png")
             if buySignet != None:
                 pyautogui.click(buySignet)
                 numberOfSignet = numberOfSignet + 1
         else:
-            cancel = pyautogui.locateCenterOnScreen("cancelBuy.png")
+            cancel = pyautogui.locateCenterOnScreen("templates/cancelBuy.png")
             if cancel != None:
                 pyautogui.click(cancel)
                 time.sleep(0.2)
-    mystiquesFound = pyautogui.locateCenterOnScreen("mistyquesPrice.png", confidence=0.98)
+    mystiquesFound = pyautogui.locateCenterOnScreen("templates/mistyquesPrice.png", confidence=0.98)
     if mystiquesFound!=None:
         pyautogui.click(mystiquesFound)
         time.sleep(1)
-        validateMistyques = pyautogui.locateCenterOnScreen("checkSummon.png", confidence=0.99)
+        validateMistyques = pyautogui.locateCenterOnScreen("templates/checkSummon.png", confidence=0.99)
         if validateMistyques!=None:
-            buyMistyques = pyautogui.locateCenterOnScreen("buyMistyques.png")
+            buyMistyques = pyautogui.locateCenterOnScreen("templates/buyMistyques.png")
             if buyMistyques != None:
                 pyautogui.click(buyMistyques)
                 numberOfMistyques = numberOfMistyques + 1
         else:
-            cancel = pyautogui.locateCenterOnScreen("cancelBuy.png")
+            cancel = pyautogui.locateCenterOnScreen("templates/cancelBuy.png")
             if cancel != None:
                 pyautogui.click(cancel)
                 time.sleep(0.2)
 
-refreshButton = pyautogui.locateCenterOnScreen("refresh.png")
+refreshButton = pyautogui.locateCenterOnScreen("templates/refresh.png")
 pyautogui.click(refreshButton)
 time.sleep(1)
-confirmRefreshButton = pyautogui.locateCenterOnScreen("confirmRefresh.png")
+confirmRefreshButton = pyautogui.locateCenterOnScreen("templates/confirmRefresh.png")
 pyautogui.click(confirmRefreshButton)
 try:
-    while numberOfRole < 1000:
+    while numberOfRole < 4000:
         time.sleep(1)
         run()
         time.sleep(0.5)
