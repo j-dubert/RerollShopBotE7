@@ -12,7 +12,7 @@ Il est nécessaire d'installer la librairie [PyAutoGUI](https://pypi.org/project
 ## Préparation du bot
 
 Il y a dans le dossier templates les images de références que le bot utilise pour retrouver les merveilleux signets dans le shop.
-Vous devez remplacer les images par des screenshots de vos écran. 
+Vous devez remplacer les images par des screenshots de vos écrans. <br>
 **Attention :** Prenez bien des screenshots de votre jeu dans la taille avec laquelle vous lancerez votre bot. **La taille de l'image compte !** D'où la nécessité de refaire chacun ses captures.
 
 ## Lancement du bot
@@ -26,7 +26,7 @@ Une fois la mise en place terminé,
 
 ## Réglages
 
-Si vous voulez accélérer le bot, vous pouvez baisser le temps d'attente du bot au niveau des ``time.sleep()``
+Si vous voulez accélérer le bot, vous pouvez baisser le temps d'attente du bot au niveau des ``time.sleep()``. <br>
 **Attention** cela risque de faire rater des signets au bot si il va plus vite que le rendu du jeu par votre ordinateur.
 
 **Conseil :** ***Ne toucher qu'aux lignes à l'intérieur du ``try{}`` entre les lignes 49 et 63***
