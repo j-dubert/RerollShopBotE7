@@ -42,7 +42,6 @@ def run():
 
 refreshButton = pyautogui.locateCenterOnScreen("templates/refresh.png")
 pyautogui.click(refreshButton)
-scrollPosition = pyautogui.locateCenterOnScreen("templates/reference.png")
 time.sleep(1)
 confirmRefreshButton = pyautogui.locateCenterOnScreen("templates/confirmRefresh.png")
 pyautogui.click(confirmRefreshButton)
@@ -52,7 +51,6 @@ try:
         run()
         time.sleep(0.5)
         print("scroll")
-        pyautogui.moveTo(scrollPosition)
         pyautogui.scroll(-10000)
         time.sleep(1)
         run()
